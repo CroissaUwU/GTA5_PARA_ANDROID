@@ -1,0 +1,327 @@
+
+:root {
+    --bg: #090b0f;
+    --card: rgba(25, 29, 36, 0.62);
+    --card-hover: rgba(34, 39, 48, 0.78);
+    --border: rgba(255, 255, 255, 0.10);
+    --text: #f4f5f7;
+    --muted: #a8adb7;
+    --accent: #59d68b;
+    --accent-hover: #43c979;
+    --danger: #ff6262;
+    --blue: #62a9ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 15% 10%, rgba(64, 150, 105, 0.13), transparent 30%),
+        radial-gradient(circle at 85% 85%, rgba(70, 110, 180, 0.10), transparent 30%),
+        var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 24px;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    width: min(720px, 100%);
+    margin: 0 auto;
+}
+
+/* Header */
+
+.site-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 130px;
+    margin-bottom: 30px;
+    padding: 24px 28px 24px 122px;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background: rgba(18, 21, 27, 0.58);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+    overflow: visible;
+}
+
+.logo {
+    position: absolute;
+    left: 14px;
+    bottom: -8px;
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.45));
+    transition: transform 0.25s ease;
+}
+
+.site-header:hover .logo {
+    transform: translateY(-5px) rotate(-2deg);
+}
+
+.brand {
+    margin: 0;
+    font-size: clamp(38px, 9vw, 62px);
+    line-height: 0.9;
+    letter-spacing: -2px;
+    font-weight: 900;
+}
+
+.tagline {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+/* Sections */
+
+.section {
+    margin-top: 22px;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+}
+
+.section-title {
+    margin: 0 0 16px;
+    font-size: 21px;
+}
+
+.game-list {
+    display: grid;
+    gap: 14px;
+}
+
+.game-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 100px;
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.035);
+    text-decoration: none;
+    transition:
+        transform 0.22s ease,
+        background 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-4px);
+    background: var(--card-hover);
+    border-color: rgba(89, 214, 139, 0.32);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.game-icon {
+    display: grid;
+    place-items: center;
+    width: 62px;
+    height: 62px;
+    flex: 0 0 62px;
+    border-radius: 15px;
+    background: rgba(89, 214, 139, 0.10);
+    border: 1px solid rgba(89, 214, 139, 0.16);
+    font-size: 31px;
+}
+
+.game-info {
+    min-width: 0;
+    flex: 1;
+}
+
+.game-info h3 {
+    margin: 0 0 5px;
+    font-size: 19px;
+}
+
+.game-info p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.arrow {
+    color: var(--accent);
+    font-size: 24px;
+    transition: transform 0.22s ease;
+}
+
+.game-card:hover .arrow {
+    transform: translateX(5px);
+}
+
+.coming-soon {
+    opacity: 0.62;
+    cursor: default;
+}
+
+.coming-soon:hover {
+    transform: none;
+    background: rgba(255, 255, 255, 0.035);
+    border-color: var(--border);
+    box-shadow: none;
+}
+
+/* GTA page */
+
+.back {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.back:hover {
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+.item {
+    margin-top: 16px;
+    padding: 17px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.035);
+    border-radius: 14px;
+}
+
+.item h3 {
+    margin-top: 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 12px;
+    padding: 13px;
+    background: var(--accent);
+    color: #08120c;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 9px;
+    font-weight: 800;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.button:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(89, 214, 139, 0.16);
+}
+
+.button svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.info {
+    color: var(--danger);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.exe {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+code {
+    color: #ddd;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 12px;
+    background: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.tutorial-note {
+    text-align: center;
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.footer {
+    margin: 30px 0 10px;
+    text-align: center;
+    color: #686d76;
+    font-size: 13px;
+}
+
+@media (max-width: 520px) {
+    body {
+        padding: 14px;
+    }
+
+    .site-header {
+        min-height: 115px;
+        padding-left: 100px;
+        border-radius: 19px;
+    }
+
+    .logo {
+        width: 105px;
+        height: 105px;
+        left: 4px;
+    }
+
+    .brand {
+        font-size: 42px;
+    }
+
+    .tagline {
+        font-size: 13px;
+    }
+
+    .section {
+        padding: 17px;
+        border-radius: 17px;
+    }
+}
