@@ -1,6 +1,6 @@
-# /*
+/*
 
-# EMULEROS — DISPOSITIVOS COMPATIBLES
+EMULEROS — DISPOSITIVOS COMPATIBLES
 
 tier 1 = 🔥 1080p 60 FPS
 tier 2 = ⚡ 720p 60 FPS+
@@ -15,7 +15,6 @@ soon = configuración próximamente
 
 const devices = [
 
-```
 /* =========================
    SAMSUNG
 ========================= */
@@ -497,19 +496,17 @@ const devices = [
     tier: 1,
     url: "https://www.youtube.com/watch?v=pk0r4T2ShV0"
 }
-```
 
 ];
 
-# /*
+/*
 
-# INFORMACIÓN DE RENDIMIENTO
+INFORMACIÓN DE RENDIMIENTO
 
 */
 
 const tierInfo = {
 
-```
 1: {
     icon: "🔥",
     text: "1080p 60 FPS"
@@ -529,13 +526,12 @@ const tierInfo = {
     icon: "🎮",
     text: "800×600 ~30 FPS"
 }
-```
 
 };
 
-# /*
+/*
 
-# ELEMENTOS
+ELEMENTOS
 
 */
 
@@ -548,15 +544,14 @@ document.getElementById("deviceSearch");
 const noResults =
 document.getElementById("noResults");
 
-# /*
+/*
 
-# RENDERIZAR
+RENDERIZAR
 
 */
 
 function renderDevices(query = "") {
 
-```
 deviceList.innerHTML = "";
 
 query =
@@ -864,13 +859,12 @@ noResults.style.display =
     results === 0
         ? "block"
         : "none";
-```
 
 }
 
-# /*
+/*
 
-# BUSCADOR
+BUSCADOR
 
 */
 
@@ -878,19 +872,17 @@ search.addEventListener(
 "input",
 () => {
 
-```
     renderDevices(
         search.value
     );
 
 }
-```
 
 );
 
-# /*
+/*
 
-# INICIAR
+INICIAR
 
 */
 
