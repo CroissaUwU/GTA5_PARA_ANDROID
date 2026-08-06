@@ -137,9 +137,9 @@ a {
 .game-icon {
     display: grid;
     place-items: center;
-    width: 62px;
-    height: 62px;
-    flex: 0 0 62px;
+    width: 68px;
+    height: 68px;
+    flex: 0 0 68px;
     border-radius: 15px;
     background: rgba(89, 214, 139, 0.10);
     border: 1px solid rgba(89, 214, 139, 0.16);
@@ -187,8 +187,8 @@ a {
 /* App icons (PNG icons inside .game-icon, e.g. GameHub / ZArchiver) */
 
 .game-icon img {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
     border-radius: 8px;
 }
@@ -203,6 +203,24 @@ a {
 
 .game-card.tool-card {
     justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+    .game-card.tool-card {
+        flex-wrap: wrap;
+    }
+
+    .game-card.tool-card .game-info {
+        flex: 1 1 100%;
+        order: 1;
+    }
+
+    .game-card.tool-card .download-btn {
+        flex: 1 1 100%;
+        order: 2;
+        width: 100%;
+        margin-top: 4px;
+    }
 }
 
 /* GTA download variant cards */
@@ -253,13 +271,13 @@ a {
 .download-icon {
     display: grid;
     place-items: center;
-    width: 54px;
-    height: 54px;
-    flex: 0 0 54px;
+    width: 58px;
+    height: 58px;
+    flex: 0 0 58px;
     border-radius: 14px;
     background: rgba(89, 214, 139, 0.10);
     border: 1px solid rgba(89, 214, 139, 0.16);
-    font-size: 26px;
+    font-size: 28px;
 }
 
 .download-body {
