@@ -112,6 +112,54 @@ const devices = [
     url: "https://www.youtube.com/watch?v=XUGpAqJmM8Q"
 },
 
+{
+    brand: "Samsung",
+    name: "Galaxy S24 FE (Exynos)",
+    processor: "Exynos 2400e",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "Samsung",
+    name: "Galaxy S23 FE (Exynos)",
+    processor: "Exynos 2200",
+    tier: 3,
+    soon: true
+},
+
+{
+    brand: "Samsung",
+    name: "Galaxy A57",
+    processor: "Exynos 1680",
+    tier: 3,
+    soon: true
+},
+
+{
+    brand: "Samsung",
+    name: "Galaxy A56",
+    processor: "Exynos 1580",
+    tier: 3,
+    soon: true
+},
+
+{
+    brand: "Samsung",
+    name: "Galaxy A55",
+    processor: "Exynos 1480",
+    tier: 3,
+    soon: true
+},
+
+{
+    brand: "Samsung",
+    name: "Galaxy A54",
+    processor: "Exynos 1380",
+    tier: 3,
+    soon: true
+},
+
 
 /* =========================
    XIAOMI
@@ -246,8 +294,81 @@ const devices = [
 {
     brand: "POCO",
     name: "POCO X6 Pro",
-    processor: "Dimensity 8300",
+    processor: "Dimensity 8300-Ultra",
     tier: 2,
+    soon: true
+},
+
+{
+    brand: "POCO",
+    name: "POCO X6",
+    processor: "Dimensity 8300-Ultra",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "POCO",
+    name: "POCO F8 Ultra",
+    processor: "Snapdragon 8 Elite Gen 5",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "POCO",
+    name: "POCO F8 Pro",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "POCO",
+    name: "POCO X8 Pro",
+    processor: "Dimensity 8500 Ultra",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "POCO",
+    name: "POCO F7 Ultra",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "POCO",
+    name: "POCO F7 Pro",
+    processor: "Snapdragon 8 Gen 3",
+    tier: 1,
+    url: "https://www.youtube.com/watch?v=pk0r4T2ShV0"
+},
+
+{
+    brand: "POCO",
+    name: "POCO F7",
+    processor: "Snapdragon 8s Gen 4",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "POCO",
+    name: "POCO X7 Pro",
+    processor: "Dimensity 8400 Ultra",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "POCO",
+    name: "POCO X7",
+    processor: "Dimensity 7300 Ultra",
+    tier: 4,
+    warning: true,
     soon: true
 },
 
@@ -334,6 +455,30 @@ const devices = [
     soon: true
 },
 
+{
+    brand: "Motorola",
+    name: "Edge 70 Pro",
+    processor: "Dimensity 8500 Extreme",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "Motorola",
+    name: "Edge 60 Pro",
+    processor: "Dimensity 8350 Extreme",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "Motorola",
+    name: "Edge 70",
+    processor: "Snapdragon 7 Gen 4",
+    tier: 3,
+    soon: true
+},
+
 
 /* =========================
    OPPO
@@ -406,6 +551,38 @@ const devices = [
     url: "https://www.youtube.com/watch?v=pk0r4T2ShV0"
 },
 
+{
+    brand: "Lenovo",
+    name: "Legion Y700 (Gen 5)",
+    processor: "Snapdragon 8 Elite Gen 5",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "Lenovo",
+    name: "Legion Y700 (Gen 4)",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "Lenovo",
+    name: "Legion Tab (2025)",
+    processor: "Snapdragon 8 Gen 3",
+    tier: 1,
+    url: "https://www.youtube.com/watch?v=pk0r4T2ShV0"
+},
+
+{
+    brand: "Lenovo",
+    name: "Legion Y700 (2022)",
+    processor: "Snapdragon 870",
+    tier: 3,
+    url: "https://www.youtube.com/watch?v=_8gZpZcL2hw"
+},
+
 
 /* =========================
    ASUS
@@ -419,6 +596,38 @@ const devices = [
     url: "https://www.youtube.com/watch?v=pk0r4T2ShV0"
 },
 
+{
+    brand: "ASUS",
+    name: "ROG Phone 9 Pro",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "ASUS",
+    name: "ROG Phone 9",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "ASUS",
+    name: "ROG Phone 9 FE",
+    processor: "Snapdragon 8 Gen 3",
+    tier: 1,
+    url: "https://www.youtube.com/watch?v=pk0r4T2ShV0"
+},
+
+{
+    brand: "ASUS",
+    name: "Zenfone 12 Ultra",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
+
 
 /* =========================
    REDMAGIC
@@ -430,6 +639,73 @@ const devices = [
     processor: "Snapdragon 8 Gen 3",
     tier: 1,
     url: "https://www.youtube.com/watch?v=pk0r4T2ShV0"
+},
+
+{
+    brand: "REDMAGIC",
+    name: "REDMAGIC 11S Pro+",
+    processor: "Snapdragon 8 Elite Gen 5",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "REDMAGIC",
+    name: "REDMAGIC 11S Pro",
+    processor: "Snapdragon 8 Elite Gen 5",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "REDMAGIC",
+    name: "REDMAGIC 11 Pro",
+    processor: "Snapdragon 8 Elite Gen 5",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "REDMAGIC",
+    name: "REDMAGIC 10 Pro",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "REDMAGIC",
+    name: "REDMAGIC 8 Pro",
+    processor: "Snapdragon 8 Gen 2",
+    tier: 2,
+    url: "https://www.youtube.com/watch?v=XUGpAqJmM8Q"
+},
+
+{
+    brand: "REDMAGIC",
+    name: "REDMAGIC 6S Pro",
+    processor: "Snapdragon 888+",
+    tier: 4,
+    warning: true,
+    url: "https://www.youtube.com/watch?v=R_OfEvlorRA"
+},
+
+{
+    brand: "REDMAGIC",
+    name: "REDMAGIC 6 Pro",
+    processor: "Snapdragon 888",
+    tier: 4,
+    warning: true,
+    url: "https://www.youtube.com/watch?v=R_OfEvlorRA"
+},
+
+{
+    brand: "REDMAGIC",
+    name: "REDMAGIC 5G",
+    processor: "Snapdragon 865",
+    tier: 3,
+    ramNote: "Puede funcionar con 8 GB de RAM.",
+    url: "https://www.youtube.com/watch?v=_8gZpZcL2hw"
 },
 
 
@@ -495,6 +771,156 @@ const devices = [
     processor: "Snapdragon 8 Gen 3",
     tier: 1,
     url: "https://www.youtube.com/watch?v=pk0r4T2ShV0"
+},
+
+{
+    brand: "HONOR",
+    name: "Magic7 Pro",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "HONOR",
+    name: "Magic7",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "HONOR",
+    name: "GT Pro",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
+
+
+/* =========================
+   TECNO
+========================= */
+
+{
+    brand: "Tecno",
+    name: "Phantom V Fold2",
+    processor: "Dimensity 9000+",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "Tecno",
+    name: "Camon 50 Ultra",
+    processor: "Dimensity 8300-Ultra",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "Tecno",
+    name: "Phantom X2",
+    processor: "Dimensity 9000",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "Tecno",
+    name: "Phantom V Flip",
+    processor: "Dimensity 8050",
+    tier: 3,
+    soon: true
+},
+
+{
+    brand: "Tecno",
+    name: "Pova 7 Ultra",
+    processor: "Dimensity 7050",
+    tier: 4,
+    warning: true,
+    soon: true
+},
+
+
+/* =========================
+   INFINIX
+========================= */
+
+{
+    brand: "Infinix",
+    name: "Zero 40",
+    processor: "Dimensity 9300",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "Infinix",
+    name: "GT 50 Pro",
+    processor: "Dimensity 8400 Ultimate",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "Infinix",
+    name: "GT 30 Pro",
+    processor: "Dimensity 8350 Ultimate",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "Infinix",
+    name: "Note 50 Pro+",
+    processor: "Dimensity 8350",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "Infinix",
+    name: "GT 30 5G+",
+    processor: "Dimensity 7400",
+    tier: 4,
+    warning: true,
+    soon: true
+},
+
+{
+    brand: "Infinix",
+    name: "Note 60",
+    processor: "Dimensity 7400 Ultimate",
+    tier: 4,
+    warning: true,
+    soon: true
+},
+
+{
+    brand: "Infinix",
+    name: "Note 60 Pro",
+    processor: "Snapdragon 7s Gen 4",
+    tier: 3,
+    soon: true
+},
+
+{
+    brand: "Infinix",
+    name: "Note 50s 5G",
+    processor: "Dimensity 7300 Ultimate",
+    tier: 4,
+    warning: true,
+    soon: true
+},
+
+{
+    brand: "Infinix",
+    name: "GT 20 Pro",
+    processor: "Dimensity 8200 Ultimate",
+    tier: 3,
+    soon: true
 }
 
 ];
