@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Aviso — descarga de GTA 5 47GB temporalmente saturada."
+    >
+    <title>Aviso de descarga — Emuleros</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="6; url=https://urlvanish.com/f1722376">
+</head>
+
+<body>
+<div class="container">
+
+<a class="back" href="gta5.html">← Volver a GTA 5 Android</a>
+
+<header>
+    <h1>⚠️ Espera un momento</h1>
+</header>
+
+
+<!-- ALERTA -->
+
+<div class="section">
+    <div class="download-card recommended" style="text-align:center; flex-direction:column;">
+
+        <img
+            src="assets/alerta.png"
+            alt="Vizcacha avisando"
+            style="width: 150px; height: auto; margin: 6px auto 14px; display: block;"
+        >
+
+        <h3 style="margin: 0 0 14px; font-size: 20px;">
+            No es un error, es normal 🙂
+        </h3>
+
+        <p style="margin: 0 0 12px; line-height: 1.6; font-size: 15px;">
+            Muchas personas están descargando el mismo archivo ahora.
+            Por eso a veces la página pide una <strong>cuenta premium</strong>
+            o dice que <strong>no se puede descargar</strong>.
+        </p>
+
+        <p style="margin: 0 0 12px; line-height: 1.6; font-size: 15px;">
+            Eso <strong>no significa que el archivo esté roto</strong> ni
+            que tengas que pagar nada.
+        </p>
+
+        <div style="width:100%; margin: 6px 0 16px; padding: 14px; border-radius: 12px; background: rgba(98,169,255,0.10); border: 1px solid rgba(98,169,255,0.25);">
+            <p style="margin: 0; line-height: 1.6; font-size: 15px;">
+                👉 Lo único que tenés que hacer es <strong>esperar entre 1 y 2 horas</strong>
+                y volver a entrar a esta misma página.
+            </p>
+        </div>
+
+        <p style="margin: 0 0 4px; color: var(--muted); font-size: 14px;">
+            Te llevamos a la descarga en <span id="countdown">6</span> segundos...
+        </p>
+
+        <a class="download-btn" href="https://urlvanish.com/f1722376" style="margin-top: 10px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Ir a la descarga ahora
+        </a>
+
+    </div>
+</div>
+
+
+<!-- QUE HACER SI PASA -->
+
+<div class="section">
+    <h2>❓ Si te sale el aviso de premium</h2>
+
+    <div class="item">
+        <h3>1. No pagues nada</h3>
+        <p>No necesitas ninguna cuenta premium para descargar el archivo.</p>
+    </div>
+
+    <div class="item">
+        <h3>2. Cerrá la página</h3>
+        <p>Simplemente salí de esa pantalla, no pasa nada.</p>
+    </div>
+
+    <div class="item">
+        <h3>3. Esperá un rato</h3>
+        <p>Dejá pasar 1 o 2 horas. Podés cerrar el celular tranquilo.</p>
+    </div>
+
+    <div class="item">
+        <h3>4. Volvé a intentar</h3>
+        <p>Entrá de nuevo a esta página y tocá el botón de descarga otra vez.</p>
+    </div>
+</div>
+
+
+<footer class="footer">
+    Emuleros · GTA 5
+</footer>
+
+</div>
+
+<script>
+    let seconds = 6;
+    const countdownEl = document.getElementById('countdown');
+    const timer = setInterval(function () {
+        seconds--;
+        if (seconds <= 0) {
+            clearInterval(timer);
+        } else {
+            countdownEl.textContent = seconds;
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
