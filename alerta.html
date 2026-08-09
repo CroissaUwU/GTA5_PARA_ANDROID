@@ -9,7 +9,6 @@
     >
     <title>Aviso de descarga — Emuleros</title>
     <link rel="stylesheet" href="style.css">
-    <meta http-equiv="refresh" content="6; url=https://urlvanish.com/f1722376">
 </head>
 
 <body>
@@ -27,39 +26,26 @@
 <div class="section">
     <div class="download-card recommended" style="text-align:center; flex-direction:column;">
 
-        <img
-            src="assets/alerta.png"
-            alt="Vizcacha avisando"
-            style="width: 150px; height: auto; margin: 6px auto 14px; display: block;"
-        >
-
-        <h3 style="margin: 0 0 14px; font-size: 20px;">
-            No es un error, es normal 🙂
+        <h3 style="margin: 0 0 14px; font-size: 24px; font-weight: 800; color: #ff3b3b; text-transform: uppercase; letter-spacing: 0.5px;">
+            ⚠️ Atención
         </h3>
 
-        <p style="margin: 0 0 12px; line-height: 1.6; font-size: 15px;">
-            Muchas personas están descargando el mismo archivo ahora.
-            Por eso a veces la página pide una <strong>cuenta premium</strong>
-            o dice que <strong>no se puede descargar</strong>.
+        <p style="margin: 0 0 18px; line-height: 1.6; font-size: 16px; font-weight: 700; color: #ff3b3b;">
+            Si te sale este cartel debés esperar entre 30 minutos y 2 horas
+            para que el servidor se libere y permita la descarga gratuita.
         </p>
 
-        <p style="margin: 0 0 12px; line-height: 1.6; font-size: 15px;">
-            Eso <strong>no significa que el archivo esté roto</strong> ni
-            que tengas que pagar nada.
-        </p>
-
-        <div style="width:100%; margin: 6px 0 16px; padding: 14px; border-radius: 12px; background: rgba(98,169,255,0.10); border: 1px solid rgba(98,169,255,0.25);">
-            <p style="margin: 0; line-height: 1.6; font-size: 15px;">
-                👉 Lo único que tenés que hacer es <strong>esperar entre 1 y 2 horas</strong>
-                y volver a entrar a esta misma página.
-            </p>
-        </div>
+        <img
+            src="assets/gofile.jpeg"
+            alt="Aviso de Gofile mostrando el mensaje de cuenta premium"
+            style="width: 100%; max-width: 340px; height: auto; margin: 6px auto 16px; display: block; border-radius: 10px;"
+        >
 
         <p style="margin: 0 0 4px; color: var(--muted); font-size: 14px;">
-            Te llevamos a la descarga en <span id="countdown">6</span> segundos...
+            Esperá la cuenta regresiva... <span id="countdown">7</span> segundos
         </p>
 
-        <a class="download-btn" href="https://urlvanish.com/f1722376" style="margin-top: 10px;">
+        <a id="downloadBtn" class="download-btn" href="https://urlvanish.com/f1722376" style="margin-top: 10px; opacity: 0.5; pointer-events: none; cursor: not-allowed;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
@@ -107,12 +93,17 @@
 </div>
 
 <script>
-    let seconds = 6;
+    let seconds = 7;
     const countdownEl = document.getElementById('countdown');
+    const btn = document.getElementById('downloadBtn');
     const timer = setInterval(function () {
         seconds--;
         if (seconds <= 0) {
             clearInterval(timer);
+            countdownEl.parentElement.textContent = 'Ya podés continuar 👇';
+            btn.style.opacity = '1';
+            btn.style.pointerEvents = 'auto';
+            btn.style.cursor = 'pointer';
         } else {
             countdownEl.textContent = seconds;
         }
