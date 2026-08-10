@@ -10,6 +10,17 @@ tier 4 = 🎮 800×600 ~30 FPS
 warning = rendimiento limitado
 soon = configuración próximamente
 
+---------------------------------------------------------
+REQUISITO MÍNIMO DE CHIPSET (MediaTek): Dimensity 7400
+Por debajo de este chipset (Dimensity 7300/7350 y anteriores,
+Helio G99, Dimensity 7020, etc.) el juego no corre de forma
+fiable — quedan como tier 4 + warning, no se eliminan de la
+lista para que el usuario sepa que existen pero no se recomienda.
+
+Samsung Exynos: solo se soporta desde el Exynos 2400e (S23 FE
+en adelante). Exynos 2200 e inferiores quedan fuera.
+
+Gama A de Samsung: A55 en adelante. El A54 queda descartado.
 =========================================================
 */
 
@@ -18,6 +29,62 @@ const devices = [
 /* =========================
    SAMSUNG
 ========================= */
+
+{
+    brand: "Samsung",
+    name: "Galaxy S26 Ultra",
+    processor: "Snapdragon 8 Elite Gen 5 for Galaxy",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "Samsung",
+    name: "Galaxy S26+",
+    processor: "Exynos 2600",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "Samsung",
+    name: "Galaxy S26",
+    processor: "Exynos 2600",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "Samsung",
+    name: "Galaxy S25 Ultra",
+    processor: "Snapdragon 8 Elite for Galaxy",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "Samsung",
+    name: "Galaxy S25+",
+    processor: "Snapdragon 8 Elite for Galaxy",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "Samsung",
+    name: "Galaxy S25",
+    processor: "Snapdragon 8 Elite for Galaxy",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "Samsung",
+    name: "Galaxy S25 FE",
+    processor: "Exynos 2400e",
+    tier: 2,
+    soon: true
+},
 
 {
     brand: "Samsung",
@@ -152,18 +219,58 @@ const devices = [
     soon: true
 },
 
-{
-    brand: "Samsung",
-    name: "Galaxy A54",
-    processor: "Exynos 1380",
-    tier: 3,
-    soon: true
-},
-
 
 /* =========================
    XIAOMI
 ========================= */
+
+{
+    brand: "Xiaomi",
+    name: "Xiaomi 17 Pro Max",
+    processor: "Snapdragon 8 Elite Gen 5",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "Xiaomi",
+    name: "Xiaomi 17 Ultra",
+    processor: "Snapdragon 8 Elite Gen 5",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "Xiaomi",
+    name: "Xiaomi 17 Pro",
+    processor: "Snapdragon 8 Elite Gen 5",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "Xiaomi",
+    name: "Xiaomi 17",
+    processor: "Snapdragon 8 Elite Gen 5",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "Xiaomi",
+    name: "Xiaomi 15 Ultra",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "Xiaomi",
+    name: "Xiaomi 15",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
 
 {
     brand: "Xiaomi",
@@ -235,6 +342,22 @@ const devices = [
     processor: "Snapdragon 870",
     tier: 3,
     url: "https://www.youtube.com/watch?v=_8gZpZcL2hw"
+},
+
+{
+    brand: "Xiaomi",
+    name: "Redmi Note 15 Pro+",
+    processor: "Snapdragon 7s Gen 4",
+    tier: 3,
+    soon: true
+},
+
+{
+    brand: "Xiaomi",
+    name: "Redmi Note 15 Pro",
+    processor: "Dimensity 7400",
+    tier: 4,
+    soon: true
 },
 
 
@@ -379,6 +502,22 @@ const devices = [
 
 {
     brand: "OnePlus",
+    name: "OnePlus 15",
+    processor: "Snapdragon 8 Elite Gen 5",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "OnePlus",
+    name: "OnePlus 13",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "OnePlus",
     name: "OnePlus 12",
     processor: "Snapdragon 8 Gen 3",
     tier: 1,
@@ -429,6 +568,14 @@ const devices = [
 /* =========================
    MOTOROLA
 ========================= */
+
+{
+    brand: "Motorola",
+    name: "Razr 60 Ultra",
+    processor: "Snapdragon 8 Elite",
+    tier: 1,
+    soon: true
+},
 
 {
     brand: "Motorola",
@@ -502,6 +649,46 @@ const devices = [
 
 {
     brand: "OPPO",
+    name: "Find X7 Ultra",
+    processor: "Snapdragon 8 Gen 3",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "OPPO",
+    name: "Reno14 Pro",
+    processor: "Dimensity 8450",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "OPPO",
+    name: "Reno14",
+    processor: "Dimensity 8350",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "OPPO",
+    name: "Reno13 Pro",
+    processor: "Dimensity 8350",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "OPPO",
+    name: "Reno13",
+    processor: "Dimensity 8350",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "OPPO",
     name: "Find X5",
     processor: "Snapdragon 888",
     tier: 4,
@@ -535,6 +722,14 @@ const devices = [
     name: "X100",
     processor: "Dimensity 9300",
     tier: 2,
+    soon: true
+},
+
+{
+    brand: "vivo",
+    name: "V50",
+    processor: "Snapdragon 7 Gen 3",
+    tier: 3,
     soon: true
 },
 
@@ -767,6 +962,22 @@ const devices = [
 
 {
     brand: "HONOR",
+    name: "Honor 400 Pro",
+    processor: "Snapdragon 8 Gen 3",
+    tier: 1,
+    soon: true
+},
+
+{
+    brand: "HONOR",
+    name: "Honor 200 Pro",
+    processor: "Snapdragon 8s Gen 3",
+    tier: 2,
+    soon: true
+},
+
+{
+    brand: "HONOR",
     name: "Magic6 Pro",
     processor: "Snapdragon 8 Gen 3",
     tier: 1,
@@ -794,6 +1005,22 @@ const devices = [
     name: "GT Pro",
     processor: "Snapdragon 8 Elite",
     tier: 1,
+    soon: true
+},
+
+{
+    brand: "HONOR",
+    name: "Honor 400",
+    processor: "Snapdragon 7 Gen 3",
+    tier: 3,
+    soon: true
+},
+
+{
+    brand: "HONOR",
+    name: "Honor 200",
+    processor: "Snapdragon 7 Gen 3",
+    tier: 3,
     soon: true
 },
 
