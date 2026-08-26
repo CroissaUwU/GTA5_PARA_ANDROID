@@ -210,49 +210,89 @@
 
         <h3>RAM</h3>
 
-        <p>
-            <strong>12 GB</strong> recomendado
-        </p>
-
-        <p>
-            <strong>8 GB</strong> mínimo
-        </p>
-
-        <p>
-            <strong>6 GB</strong> — únicamente algunos modelos concretos,
-            como Galaxy S20 FE y POCO F3.
-        </p>
+        <div class="ram-tags">
+            <span class="ram-tag">12 GB recomendado</span>
+            <span class="ram-tag">8 GB mínimo</span>
+            <span class="ram-tag muted">6 GB solo en modelos puntuales (Galaxy S20 FE, POCO F3)</span>
+        </div>
 
     </div>
 
     <div class="item">
 
-        <h3>Procesador</h3>
+        <h3>Procesador — piso mínimo (800×600 ~30 FPS)</h3>
 
-        <p>
-            Como piso mínimo (rendimiento limitado, 800×600 ~30 FPS) el juego
-            corre en:
-        </p>
+        <div class="chip-group">
+            <p class="chip-group-label ok">✅ Gráficos normales</p>
+            <div class="chip-grid">
+                <span class="chip">Snapdragon 8 Gen 1</span>
+                <span class="chip">Snapdragon 888 / 888+</span>
+            </div>
+        </div>
 
-        <p>
-            <strong>Snapdragon 888 / 888+ / 8 Gen 1</strong> — los que mejor
-            se defienden dentro de este rango.
-        </p>
-
-        <p>
-            <strong>Dimensity 7400</strong> — único chipset MediaTek soportado
-            como mínimo. Necesita sí o sí gráficos ultra optimizados
-            (<code>settings.xml</code> + <code>commandline.txt</code>) para
-            andar de forma estable en 800×600 ~30 FPS. Por debajo de este
-            chipset (Dimensity 7300/7350 y anteriores, Helio G99, etc.) el
-            juego no corre de forma fiable.
-        </p>
+        <div class="chip-group">
+            <p class="chip-group-label warn">
+                🚀 Necesitan ultra optimización
+                <span class="chip-group-hint">👉 ver guía</span>
+            </p>
+            <div class="chip-grid">
+                <span class="chip">Snapdragon 6 Gen 3</span>
+                <span class="chip">Snapdragon 6 Gen 4</span>
+                <span class="chip">Snapdragon 778+</span>
+                <span class="chip">Snapdragon 780G</span>
+                <span class="chip">Snapdragon 7s Gen 3</span>
+                <span class="chip">Snapdragon 7s Gen 4</span>
+                <span class="chip wide">Dimensity 7400 (y variantes)</span>
+            </div>
+        </div>
 
         <p class="info">
             👉 Revisá la sección "Ultra optimización de GTA 5" en
-            <a href="errores.html">Errores y soluciones</a> si tenés
-            MediaTek — es prácticamente obligatoria para ese rango.
+            <a href="errores.html">Errores y soluciones / optimizaciones</a> si tenés
+            alguno de estos chipsets — es prácticamente obligatoria para ese rango.
+            Por debajo de Dimensity 7400 (7300/7350 y anteriores, Helio G99, etc.)
+            el juego no corre de forma fiable.
         </p>
+
+        <div class="recommended-block">
+            <h3>⭐ Recomendados — 720p 30 FPS o superior</h3>
+
+            <p class="brand-label">Snapdragon</p>
+            <div class="chip-grid">
+                <span class="chip">7 Gen 3</span>
+                <span class="chip">7 Gen 4</span>
+                <span class="chip">7+ Gen 2</span>
+                <span class="chip">7+ Gen 3</span>
+                <span class="chip">7s Gen 4</span>
+                <span class="chip">8+ Gen 1</span>
+                <span class="chip">865 / 870</span>
+                <span class="chip">8s Gen 3</span>
+                <span class="chip">8s Gen 4</span>
+                <span class="chip">8 Gen 2</span>
+                <span class="chip">8 Gen 3</span>
+                <span class="chip">8 Elite</span>
+                <span class="chip">8 Elite Gen 5</span>
+                <span class="chip">8 Elite for Galaxy</span>
+            </div>
+
+            <p class="brand-label">Dimensity</p>
+            <div class="chip-grid">
+                <span class="chip">8050 / 8200</span>
+                <span class="chip">8300 / 8350</span>
+                <span class="chip">8400 / 8450</span>
+                <span class="chip">8500</span>
+                <span class="chip">9000 / 9000+</span>
+                <span class="chip">9300</span>
+                <span class="chip">9400 / 9500</span>
+            </div>
+
+            <p class="brand-label">Exynos</p>
+            <div class="chip-grid">
+                <span class="chip">1480 / 1580 / 1680</span>
+                <span class="chip">2200 / 2400e</span>
+                <span class="chip">2600</span>
+            </div>
+        </div>
 
     </div>
 
