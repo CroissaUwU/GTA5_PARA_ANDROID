@@ -1366,7 +1366,7 @@ Object
 
             const card =
                 document.createElement(
-                    device.url
+                    (device.url && device.brand !== "Infinix")
                         ? "a"
                         : "div"
                 );
@@ -1396,7 +1396,7 @@ Object
             }
 
 
-            if (device.url) {
+            if (device.url && device.brand !== "Infinix") {
 
                 card.href =
                     device.url;
@@ -1407,6 +1407,10 @@ Object
                 card.rel =
                     "noopener noreferrer";
 
+            }
+
+            if (device.brand === "Infinix") {
+                card.classList.add("infinix-important");
             }
 
 
@@ -1458,7 +1462,22 @@ Object
             }
 
 
-            if (device.url) {
+            if (device.brand === "Infinix") {
+
+                extra += `
+
+                    <div class="infinix-alert">
+                        <strong>⚠️ IMPORTANTE · INFINIX</strong>
+                        <span>Requiere un ajuste adicional en Opciones de desarrollador para evitar crasheos.</span>
+                        <div class="device-actions">
+                            <a href="errores.html#infinix">Ver solución</a>
+                            ${device.url ? `<a href="${device.url}" target="_blank" rel="noopener noreferrer">▶ Ver configuración</a>` : ""}
+                        </div>
+                    </div>
+
+                `;
+
+            } else if (device.url) {
 
                 extra += `
 
