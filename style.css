@@ -615,3 +615,251 @@ code {
         grid-column: span 2;
     }
 }
+
+
+/* Emuleros 2026-09 — navegación y avisos GTA V */
+
+.featured-card {
+    border-color: rgba(89, 214, 139, 0.55);
+    background: rgba(89, 214, 139, 0.065);
+}
+
+.card-kicker {
+    display: inline-block;
+    margin-bottom: 7px;
+    padding: 4px 9px;
+    border-radius: 999px;
+    background: rgba(89, 214, 139, 0.14);
+    border: 1px solid rgba(89, 214, 139, 0.30);
+    color: var(--accent);
+    font-size: 10.5px;
+    font-weight: 900;
+    letter-spacing: 0.35px;
+}
+
+.compact-section {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.requirements-details summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 800;
+    user-select: none;
+}
+
+.requirements-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.requirements-details summary::after {
+    content: "＋";
+    float: right;
+    color: var(--accent);
+}
+
+.requirements-details[open] summary::after {
+    content: "−";
+}
+
+.requirements-preview {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.requirements-preview h3:first-child {
+    margin-top: 0;
+}
+
+.requirements-link {
+    margin-bottom: 0;
+}
+
+.video-thumbnail {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-top: 12px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: #000;
+    text-decoration: none;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.22s ease, filter 0.22s ease;
+}
+
+.video-thumbnail:hover img {
+    transform: scale(1.02);
+    filter: brightness(0.78);
+}
+
+.video-play {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: rgba(9, 11, 15, 0.86);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    color: white;
+    font-size: 25px;
+    padding-left: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.38);
+}
+
+.server-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+}
+
+.server-buttons .download-btn {
+    width: 100%;
+    justify-content: center;
+}
+
+.secondary-btn {
+    background: rgba(98, 169, 255, 0.12);
+    border-color: rgba(98, 169, 255, 0.32);
+    color: #a9d0ff;
+}
+
+.premium-card {
+    border-color: rgba(98, 169, 255, 0.34);
+}
+
+.optimization-cta {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    border-color: rgba(89, 214, 139, 0.48);
+    background: rgba(89, 214, 139, 0.055);
+}
+
+.cta-icon {
+    display: grid;
+    place-items: center;
+    width: 54px;
+    height: 54px;
+    flex: 0 0 54px;
+    border-radius: 14px;
+    background: rgba(89, 214, 139, 0.11);
+    border: 1px solid rgba(89, 214, 139, 0.20);
+    font-size: 27px;
+}
+
+.cta-content h2 {
+    margin: 3px 0 8px;
+    font-size: 20px;
+}
+
+.cta-content p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.optimization-intro {
+    margin: -4px 0 16px;
+    padding: 11px 13px;
+    border-radius: 11px;
+    background: rgba(89, 214, 139, 0.08);
+    border: 1px solid rgba(89, 214, 139, 0.22);
+    color: #d9f7e5;
+    line-height: 1.45;
+}
+
+.important-item,
+.infinix-important {
+    border-color: rgba(245, 185, 93, 0.48) !important;
+    background: rgba(245, 185, 93, 0.055) !important;
+}
+
+.important-badge {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 4px 9px;
+    border-radius: 999px;
+    background: rgba(245, 185, 93, 0.14);
+    border: 1px solid rgba(245, 185, 93, 0.35);
+    color: #f5c66f;
+    font-size: 10.5px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+}
+
+.infinix-alert {
+    margin-top: 11px;
+    padding: 11px 12px;
+    border-radius: 11px;
+    background: rgba(245, 185, 93, 0.10);
+    border: 1px solid rgba(245, 185, 93, 0.28);
+}
+
+.infinix-alert strong,
+.infinix-alert span {
+    display: block;
+}
+
+.infinix-alert strong {
+    color: #f5c66f;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.infinix-alert span {
+    color: var(--muted);
+    font-size: 12.5px;
+    line-height: 1.4;
+}
+
+.device-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.device-actions a {
+    padding: 7px 10px;
+    border-radius: 9px;
+    border: 1px solid rgba(245, 185, 93, 0.30);
+    background: rgba(255, 255, 255, 0.035);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.device-actions a:hover {
+    background: rgba(245, 185, 93, 0.12);
+}
+
+@media (max-width: 520px) {
+    .server-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .optimization-cta {
+        flex-direction: column;
+    }
+
+    .cta-icon {
+        width: 48px;
+        height: 48px;
+        flex-basis: 48px;
+    }
+}
