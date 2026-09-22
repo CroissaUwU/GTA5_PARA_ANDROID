@@ -42,7 +42,7 @@
         >
 
         <p style="margin: 0 0 4px; color: var(--muted); font-size: 14px;">
-            Esperá la cuenta regresiva... <span id="countdown">7</span> segundos
+            Esperá la cuenta regresiva... <span id="countdown">6</span> segundos
         </p>
 
         <a id="downloadBtn" class="download-btn" href="https://urlvanish.com/f1722376" style="margin-top: 10px; opacity: 0.5; pointer-events: none; cursor: not-allowed;">
@@ -93,7 +93,7 @@
 </div>
 
 <script>
-    let seconds = 7;
+    let seconds = 6;
     const countdownEl = document.getElementById('countdown');
     const btn = document.getElementById('downloadBtn');
     const timer = setInterval(function () {
@@ -104,6 +104,7 @@
             btn.style.opacity = '1';
             btn.style.pointerEvents = 'auto';
             btn.style.cursor = 'pointer';
+            window.location.href = btn.href;
         } else {
             countdownEl.textContent = seconds;
         }
